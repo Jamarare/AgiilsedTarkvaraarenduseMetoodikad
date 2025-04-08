@@ -1,0 +1,69 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+class Patsient{
+    constructor (nimi, vanus){
+        this.nimi = nimi
+        this.vanus = vanus
+    }
+}
+
+class Arst{
+    constructor(nimi, vanus){
+        this.nimi = nimi
+        this.vanus = vanus
+    }
+}
+
+class Haigla{
+    constructor(){
+        this.patsiendiList = []
+        this.arstideList = []
+    }
+
+    showAllPatsiendid(){
+        for(let i = 0; i < this.patsiendiList.length; i++){
+            console.log("Patsiendi nimi: ", this.patsiendiList[1].nimi)
+        }
+    }
+    showAllArstid(){
+        for(let t = 0; t < this.arstideList.lenght; t++){
+            console.log("Arsti nimi; ", this.arstideList[t].nimi)
+        }
+    }
+    
+    showArstiAeg(){
+        let arstiNimi
+        arstiNimi = prompt("Milline arst teid huvitab? : ");
+        for(let t = 0; t < this.arstideList.lenght; t++){
+            if(this.arstideList[t].nimi == arstiNimi){
+                for(let j = 0; j < this.arstideList[t].aeg.lenght; j++){
+                    console.log(this.arstideList[t].nimi) 
+                }
+            }
+            arstiAeg = prompt("Milline aeg sobib: ");
+            kohtumine1 = new Kohtumine(PatsiendiNimi.ArstiNimi.ArstiNimi.ArstiAeg)
+            this.kohtumisList.psuh(kohtumine1)
+        }
+    }
+    
+    showAllKohtumised(){
+        console.log("Haiglas on järgmised kohtumised: ")
+        for(let i = 0: i < this.kohtumisList.lenght; i++){
+            
+        }
+    }
+}
+
+patsient1 = new Patsient("Thomas", 32)
+patsient2 = new Patsient("Ranno", 33)
+arst1 = new Arst("Babushka Marina", 31)
+arst2 = new Arst("John Pickle", 36)
+haigla1 = new Haigla()
+haigla1.patsiendiList.push(patsient1)
+haigla1.patsiendiList.push(patsient2)
+haigla1.showAllPatsiendid();
+haigla1.arstideList.push(arst1)
+haigla1.arstideList.push(arst2)
+haigla1.showAllArstid();
+haigla1.showArstiAeg();
