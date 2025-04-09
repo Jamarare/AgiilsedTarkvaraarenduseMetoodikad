@@ -1,11 +1,14 @@
 name: python-ci
 on: [push]
+
 jobs:
   build:
     runs-on:ubuntu-latest
 
     steps:
+      -name: Checkout kood
       -uses: actions/checkout@v2
+      
       -name: pythoni instaleerimine
       uses: actions/setup-python@v2
       with:
