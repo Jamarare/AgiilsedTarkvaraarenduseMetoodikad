@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minu Projekt</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Projekti Koduleht</h1>
+      <nav>
+        <a href="#about">Avaleht</a>
+        <a href="#news">Uudised</a>
+        <a href="#contact">Kontakt</a>
+        <a href="#feedback">Tagasiside</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>Projekti tutvustus</h2>
+        <p>
+          See veebileht tutvustab minu projekti ja annab selle kohta olulist
+          infot.
+        </p>
+      </section>
+
+      <section id="news">
+        <h2>Uudised</h2>
+        <ul>
+          <li>📅 Projekt alustati!</li>
+          <li>🚀 Valmimine plaanis 3 nädala jooksul.</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Kontakt</h2>
+        <p>
+          Email:
+          <a href="mailto:allanlond23@gmail.com">allanlond23@gmail.com</a>
+        </p>
+      </section>
+
+      <section id="feedback">
+        <h2>Tagasiside</h2>
+        <form id="feedback-form">
+          <label for="name">Nimi:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="message">Sõnum:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Saada</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Minu Projekt</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
